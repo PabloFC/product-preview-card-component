@@ -11,14 +11,52 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fraunces Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+    <div class="container">
+      <div class="card">
+        <div class="left-side">
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle parfum photo"
+          />
+        </div>
+        <div class="right-side">
+          <div class="card-text">
+            <p>Perfume</p>
+            <h1>Gabrielle Essence Eau De Parfum A floral</h1>
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL
+            </p>
+          </div>
+          <div class="price">
+            <p>$149.99</p>
+            <p>$169.99</p>
+          </div>
+          <div class="button">
+            <img src="" alt="" />
+            <p>Add to Cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
