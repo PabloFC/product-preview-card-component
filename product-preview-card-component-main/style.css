@@ -9,14 +9,25 @@ body {
   font-size: 14px;
 }
 
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--black);
+}
+
 :root {
-  --neutralCream: hsl(30, 38%, 92%);
+  --primaryGreen500: hsl(158, 36%, 37%);
+  --primaryGreen700: hsl(158, 42%, 18%);
+  --cream: hsl(30, 38%, 92%);
+  --grey: hsl(228, 12%, 48%);
+  --black: hsl(212, 21%, 14%);
   --white: hsl(0, 0%, 100%);
 }
 
 .container {
   height: 100vh;
-  background-color: var(--neutralCream);
+  background-color: var(--cream);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,27 +36,74 @@ body {
 .card {
   width: 600px;
   height: auto;
-  border: 1px solid black;
   display: flex;
   border-radius: 12px;
-  padding: 8px;
 }
 
 .left-side {
-  max-width: 300px;
+  flex: 1;
 }
 
-img {
-  max-width: 300px;
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
 }
 .right-side {
-  max-width: 300px;
-  padding: 24px;
+  flex: 1;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+.card-text p,
+.card-text h1,
+.price {
+  padding-bottom: 24px;
+}
+
+.card-text p:first-of-type {
+  color: var(--grey);
+  letter-spacing: 2px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.price p:first-of-type {
+  color: var(--primaryGreen500);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price > p:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.grey-color {
+  color: var(--grey);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: var(--primaryGreen500);
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primaryGreen700);
 }
