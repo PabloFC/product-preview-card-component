@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta name="author" content="PabloFC" />
 
     <link
       rel="icon"
@@ -33,10 +33,16 @@
     <div class="container">
       <div class="card">
         <div class="left-side">
-          <img
-            src="./images/image-product-desktop.jpg"
-            alt="Gabrielle parfum photo"
-          />
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="./images/image-product-mobile.jpg"
+            />
+            <img
+              src="./images/image-product-desktop.jpg"
+              alt="Gabrielle parfum photo"
+            />
+          </picture>
         </div>
         <div class="right-side">
           <div class="card-text">

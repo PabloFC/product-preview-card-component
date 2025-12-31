@@ -107,3 +107,39 @@ h1 {
 .button:hover {
   background-color: var(--primaryGreen700);
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 375px;
+    margin: 16px;
+  }
+
+  .left-side img {
+    border-radius: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .right-side {
+    padding: 24px;
+    border-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .card-text p,
+  .card-text h1,
+  .price {
+    padding-bottom: 16px;
+  }
+  .price {
+    gap: 20px;
+  }
+}
